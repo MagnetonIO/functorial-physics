@@ -9,7 +9,7 @@
 
 \onehalfspacing
 
-\title{Summary of the Chat: A Unified Quantum-Relativistic Framework}
+\title{A Unified Quantum-Relativistic Framework}
 \author{}
 \date{}
 
