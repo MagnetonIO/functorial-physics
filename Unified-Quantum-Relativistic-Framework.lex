@@ -131,13 +131,19 @@ Z(\text{Cobordisms})
 \;\oplus\; 
 \delta_{derived}(\Psi(t)).
 \]
+Encapsulates curvature (noncommutative geometry), topology (TQFT), and homotopy (derived corrections).
+
 \begin{itemize}
-\item Encapsulates curvature (noncommutative geometry), topology (TQFT), and homotopy (derived corrections).
+\item $\displaystyle \frac{d}{dt}\Psi(t)$: The time derivative of the state, indicating evolution.
+\item $\displaystyle \frac{\hbar c}{l_p^2}\bigl[D_\mu, D_\nu\bigr]$: Curvature-driven term from noncommutative geometry.
+\item $\displaystyle Z(\text{Cobordisms})$: The TQFT component accounting for changes in the topological structure of spacetime.
+\item $\displaystyle \delta_{derived}$: Corrections from derived and homotopy-theoretic considerations.
 \item $\oplus$ is schematic, symbolizing compositional contributions from different advanced frameworks.
 \end{itemize}
+Each piece addresses a unique facet of the unified theory: geometry, topology, operator-based quantum mechanics, and algebraic/homotopy refinements.
 
 \section{Conclusion}
-The chat provides:
+The PDF provides:
 \begin{itemize}
 \item A \textbf{Peer-Review} style critique of the approach.
 \item \textbf{Expanded Theoretical Insights} into category theory, TQFT, noncommutative geometry, and TDA.
