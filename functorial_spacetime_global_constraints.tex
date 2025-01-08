@@ -1,0 +1,223 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{cite}
+
+\title{\bf A Functorial Reformulation of Spacetime and Global Constraints \\
+\large in Modern Physics}
+\author{Matthew Long \\
+Magneton Labs}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The reconciliation of local quantum field theories with large-scale geometric constraints
+has long been a central puzzle. Many physical phenomena---from topological phases of matter
+to gravitational boundary conditions in cosmology---involve global constraints that are not
+always evident when looking at local dynamics alone. In this paper, we propose a \emph{functorial
+physics} approach that unifies local processes with global constraints by treating spacetime regions,
+boundaries, and even topological data as objects and morphisms in a (higher) category. By embedding
+quantum amplitudes into functors from a ``spacetime cobordism'' category to a category of state spaces,
+we show how global constraints naturally emerge from local rules. We provide the conceptual and
+mathematical underpinnings, give illustrative equations, and argue that this perspective clarifies
+the interplay of local field content with boundary conditions, anomalies, and topological constraints.
+\end{abstract}
+
+\hrule
+\vspace{1em}
+
+\section{Introduction}
+Understanding how local quantum descriptions reconcile with global geometric or topological constraints
+remains one of the major challenges in theoretical physics. In quantum field theory (QFT) and general
+relativity (GR), one encounters scenarios where the bulk, local dynamics cannot be fully understood
+without specifying boundary conditions or global topological data. For example:
+\begin{itemize}[label=$\bullet$]
+\item \emph{Topological phases of matter} (quantum Hall states, topological insulators) depend crucially
+on boundary excitations and global invariants.
+\item \emph{Spacetime boundaries in gravitational settings}, such as asymptotically AdS or FRW cosmologies,
+necessitate boundary terms and constraint equations that can drastically affect the global dynamics.
+\item \emph{Gauge anomalies and homotopy classes} of gauge fields highlight how local gauge transformations
+fail to capture full consistency conditions unless extended globally.
+\end{itemize}
+A unifying framework that properly accounts for local physics while simultaneously encapsulating global constraints
+is therefore indispensable. \emph{Functorial physics}---originally introduced in the context of topological quantum field theories
+(TQFTs)---provides a powerful lens through which spacetime and global constraints can be seen as natural consequences
+of certain functorial assignments.
+
+This paper details how a \emph{functorial} perspective reinterprets \emph{spacetime regions}, \emph{boundaries}, and \emph{global constraints}
+as objects and morphisms in a suitable category. By generalizing the Atiyah--Segal axioms for TQFT, we incorporate local quantum theories
+and show how boundary conditions, anomalies, or other global features manifest functorially as coherence conditions. 
+We then discuss how these ideas shed new light on issues such as:
+\begin{enumerate}[label=(\roman*)]
+    \item \textbf{Gauge invariance and anomalies,}
+    \item \textbf{Gravitational boundary terms,} 
+    \item \textbf{Symmetry-protected topological phases} at finite temperature or curvature.
+\end{enumerate}
+
+\section{Spacetime as a Category and Its Global Constraints}
+\label{sec:SpacetimeAsCategory}
+
+\subsection{Cobordisms and Regions}
+A key insight, pioneered by the work on TQFT, is that \emph{spacetimes with boundaries (cobordisms)} can be treated
+as morphisms between boundary components. Concretely, one can define:
+\[
+\mathcal{C} \;=\; \text{(Category of cobordisms)},
+\]
+where
+\begin{itemize}
+    \item \textbf{Objects} are $(d-1)$-dimensional manifolds $\Sigma$ (possible spatial boundaries),
+    \item \textbf{Morphisms} are $d$-dimensional cobordisms $M$ such that $\partial M = \Sigma_{\mathrm{in}} \cup \Sigma_{\mathrm{out}}$,
+    \item Composition of morphisms corresponds to gluing cobordisms along matching boundaries.
+\end{itemize}
+In topological quantum field theory, a TQFT is then a functor
+\[
+Z: \mathcal{C} \;\;\longrightarrow\;\; \mathcal{D},
+\]
+where $\mathcal{D}$ is typically a category of vector spaces (or more advanced algebraic structures). 
+By assigning a vector space $Z(\Sigma)$ to each boundary $\Sigma$ and a linear map $Z(M): Z(\Sigma_{\mathrm{in}}) \to Z(\Sigma_{\mathrm{out}})$
+to each cobordism $M$, $Z$ encapsulates how global constraints (e.g.\ topology of $M$) encode quantum amplitudes.
+
+\subsection{Extending Beyond TQFT: Local Fields + Boundary Data}
+While TQFT focuses on purely topological data, one can enrich $\mathcal{C}$ to incorporate local field content (e.g.\ gauge fields, metric data).
+For instance:
+\[
+\mathcal{C}_{\mathrm{Grav}}: \quad \text{Objects} = \{\Sigma, \; \text{possible 3-metrics, boundary conditions}\}, 
+\;\;\; \text{Morphisms} = \{\text{4D cobordisms, local gravitational fields}\}.
+\]
+The presence of nontrivial curvature or local degrees of freedom means the resulting functor $Z$ (or a more general $\mathcal{F}$)
+encodes not just topological invariants but also boundary constraints that must be satisfied by the local fields.
+This systematically merges local PDE constraints (Einstein equations, gauge field equations) with boundary conditions and global anomalies
+(e.g.\ gravitational anomalies).
+
+\section{Resolving Global Constraints Functorially}
+\label{sec:Resolutions}
+
+\subsection{Local to Global Consistency}
+In a purely local quantum field theory, one might write down an action or Hamiltonian density $\mathcal{L}(\phi,\partial_\mu \phi,\dots)$,
+deriving field equations or correlation functions. However, specifying boundary conditions or topological sectors typically happens
+\emph{ad hoc}. In the functorial approach:
+\begin{equation}
+\mathcal{F} \;:\; \mathcal{C}_{\mathrm{Spacetime}} \;\longrightarrow\; \mathcal{C}_{\mathrm{States}},
+\end{equation}
+the data of allowed boundary conditions, anomalies, or zero-modes is forced to \emph{commute} with gluing operations.
+Hence, the resulting global constraints are not separate from local equations but an inevitable property of how $\mathcal{F}$
+assigns state spaces to boundaries. Composition of spacetimes yields the composition of maps in $\mathcal{C}_{\mathrm{States}}$,
+which can be linear operators, groupoid morphisms, or even $\infty$-morphisms.
+
+\subsection{Anomalies as Obstructions to Natural Transformations}
+Gauge or gravitational anomalies can be seen as obstructions to extending $\mathcal{F}$ consistently across all morphisms
+in the cobordism category. If a global symmetry fails to be realized at the quantum level, it implies $\mathcal{F}$
+cannot be upgraded to a symmetry-transformed version $\mathcal{F}'$ in a way that is fully natural. 
+Diagrammatically, certain diagrams in $\mathcal{C}$ fail to commute in $\mathcal{C}_{\mathrm{States}}$,
+manifesting the anomaly as the mismatch in amplitude assignments for “looped” or “twisted” boundary identifications.
+
+\section{Illustrative Equations and Setup}
+\label{sec:IllustrativeMath}
+
+\subsection{Functorial TQFT Generalization}
+For a standard $d$-dimensional TQFT, we have the assignment:
+\[
+Z(\Sigma) \;=\; \text{a vector space (Hilbert space) $H_{\Sigma}$},
+\quad
+Z(M): H_{\Sigma_{\mathrm{in}}} \;\to\; H_{\Sigma_{\mathrm{out}}}.
+\]
+If we incorporate local gauge fields $A$ and curvature $R$, the amplitude might look like
+\begin{equation}\label{eq:ZAmplitude}
+Z(M; A, R) \;=\; \int_{\substack{\phi,\gamma \,\in \\ \text{boundary conditions}}}
+\exp\Bigl( i S[M,\phi,A,R]\Bigr),
+\end{equation}
+where the path integral or functional measure is restricted by boundary conditions $\phi \big|_{\partial M} = \varphi$
+and gauge constraints. The result is an element of $\mathrm{Hom}(H_{\Sigma_{\mathrm{in}}},\, H_{\Sigma_{\mathrm{out}}})$.
+
+\subsection{Local PDE, Global Glueing}
+Local PDE constraints (e.g.\ the Einstein equations in a region $M$) imply that only certain fields $\phi$ or metrics $g$
+are admissible. But requiring the boundary $\Sigma$ to connect consistently with another manifold $M'$ in a glued manifold $M \cup_\Sigma M'$
+imposes further constraints (like matching gauge potentials or metric data at $\Sigma$). From a functorial standpoint:
+\[
+Z(M \cup_\Sigma M') \;=\; Z(M') \circ Z(M),
+\]
+so any mismatch in boundary data would break the composition law and thus break the functor property. This is precisely how
+global constraints arise from local PDE solutions glued across boundaries.
+
+\section{Interpretational Clarity}
+\label{sec:Interpretation}
+The advantage of a functorial viewpoint lies in:
+\begin{itemize}[label=$\diamond$]
+    \item \textbf{Unified PDE + Boundary Approach:} One no longer sees boundary conditions as external picks but
+    as morphological data in the category itself.
+    \item \textbf{Geometric / Topological Phases as Objects:} Different phases or topological classes appear as objects in the
+    “extended” category, revealing that transitions between them are morphisms requiring or disallowing certain boundary identifications.
+    \item \textbf{Anomaly Detection as Diagrammatic Failure:} Instead of “secret constraints,” anomalies emerge as the
+    impossibility of making certain diagrams commute, i.e.\ a fundamental mismatch in amplitude assignment across global loops.
+\end{itemize}
+Thus, what might seem mysterious or scattered in a local-only viewpoint finds a coherent explanation as soon as we
+consider “spacetime + boundary” as morphisms in a structured category, with quantum states or amplitude maps
+realized as functors out of this category.
+
+\section{Conclusion and Outlook}
+By reinterpreting \emph{spacetime regions, boundaries, gauge fields, and constraints} as part of a functorial tapestry, we:
+\begin{enumerate}[label=(\alph*)]
+    \item Enforce local PDE constraints by restricting object and morphism content,
+    \item Derive global constraints naturally from composition laws in the category,
+    \item Clarify anomalies as the non-existence of certain natural transformations,
+    \item Provide a robust setting for bridging classical boundary value problems (like GR with specific asymptotics)
+          and quantum phenomena (like TQFT or boundary excitations in topological phases).
+\end{enumerate}
+
+Looking ahead, several key directions emerge:
+\begin{itemize}[label=$\bullet$]
+    \item \textbf{Higher-Categorical Structures:} Many realistic situations require 2-categories or $\infty$-categories
+    to capture extended operators, corners, or fracton-like excitations.
+    \item \textbf{Applications to Quantum Gravity:} Attempting a fully quantum gravitational theory might
+    demand a functor from a 4D cobordism category (with boundary data, possibly an $\infty$-category) to a category of
+    states that includes gravitational degrees of freedom, topological transitions, and black hole boundaries.
+    \item \textbf{Interfacing with AdS/CFT:} Global constraints in holography can be recast in boundary-bulk functors,
+    bridging local bulk PDE solutions with boundary CFT operators in a rigorous compositional manner.
+\end{itemize}
+
+\noindent In short, \emph{Functorial Physics} offers a unifying language where \emph{Spacetime + Global Constraints} become
+not an afterthought but an inherent feature of how amplitudes, states, and boundaries compose.
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\noindent \textbf{Acknowledgments.} \\
+Matthew Long thanks his colleagues at Magneton Labs for extensive discussions on category theory, boundary conditions,
+and topological phases. Insights from TQFT pioneers (Atiyah, Segal) and modern developments (Lurie, Freed) form the bedrock
+of these functorial ideas.
+
+\vspace{1em}
+
+\begin{thebibliography}{9}
+
+\bibitem{AtiyahTQFT}
+M.\ Atiyah, 
+\emph{Topological Quantum Field Theories}, 
+Inst.\ Hautes \'Etudes Sci.\ Publ.\ Math.\ \textbf{68}, 175--186 (1989).
+
+\bibitem{Segal}
+G.\ Segal, 
+\emph{The Definition of Conformal Field Theory}, 
+in \emph{Differential Geometrical Methods in Theoretical Physics},
+NATO ASI Series (1988), 165--171.
+
+\bibitem{Lurie}
+J.\ Lurie, 
+\emph{On the Classification of Topological Field Theories},
+\texttt{arXiv:0905.0459}, (2009).
+
+\bibitem{Freed}
+D.\ S.\ Freed, 
+\emph{Remarks on Chern--Simons Theory}, 
+Bull.\ Amer.\ Math.\ Soc.\ \textbf{46}, 221--254 (2009).
+
+\end{thebibliography}
+
+\end{document}
