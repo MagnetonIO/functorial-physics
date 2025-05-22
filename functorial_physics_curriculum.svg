@@ -1,0 +1,156 @@
+<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2c3e50">
+    AI-Prompt-Driven Curriculum for Functorial Physics
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="700" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#34495e">
+    A modular, self-guided curriculum using AI prompts to explore and internalize the framework. At each step, feed
+  </text>
+  <text x="700" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#34495e">
+    the prompt to your favorite LLM, refine its output, and compare against canonical references.
+  </text>
+  
+  <!-- Table header -->
+  <rect x="50" y="120" width="1300" height="50" fill="#34495e" stroke="#2c3e50" stroke-width="2"/>
+  
+  <!-- Header text -->
+  <text x="200" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Module</text>
+  <text x="500" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Learning Goals</text>
+  <text x="975" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">AI Prompt</text>
+  
+  <!-- Vertical dividers in header -->
+  <line x1="350" y1="120" x2="350" y2="170" stroke="white" stroke-width="2"/>
+  <line x1="650" y1="120" x2="650" y2="170" stroke="white" stroke-width="2"/>
+  
+  <!-- Row 1: Foundations of Category Theory -->
+  <rect x="50" y="170" width="1300" height="80" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="350" y1="170" x2="350" y2="250" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="650" y1="170" x2="650" y2="250" stroke="#bdc3c7" stroke-width="1"/>
+  
+  <text x="60" y="195" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">1. Foundations of</text>
+  <text x="60" y="215" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Category Theory</text>
+  
+  <text x="360" y="195" font-family="Arial, sans-serif" font-size="13" fill="#34495e">Understand objects,</text>
+  <text x="360" y="215" font-family="Arial, sans-serif" font-size="13" fill="#34495e">morphisms, functors,</text>
+  <text x="360" y="235" font-family="Arial, sans-serif" font-size="13" fill="#34495e">natural transformations</text>
+  
+  <text x="660" y="190" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">"Explain the basic concepts of category theory—objects, morphisms,</text>
+  <text x="660" y="210" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">functors, and natural transformations—with simple examples."</text>
+  
+  <!-- Row 2: Classical Mechanics as a Category -->
+  <rect x="50" y="250" width="1300" height="80" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="350" y1="250" x2="350" y2="330" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="650" y1="250" x2="650" y2="330" stroke="#bdc3c7" stroke-width="1"/>
+  
+  <text x="60" y="275" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">2. Classical</text>
+  <text x="60" y="295" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Mechanics</text>
+  <text x="60" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">as a Category</text>
+  
+  <text x="360" y="275" font-family="Arial, sans-serif" font-size="13" fill="#34495e">Model symplectic manifolds</text>
+  <text x="360" y="295" font-family="Arial, sans-serif" font-size="13" fill="#34495e">and canonical maps</text>
+  <text x="360" y="315" font-family="Arial, sans-serif" font-size="13" fill="#34495e">categorically</text>
+  
+  <text x="660" y="270" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">"Describe the category whose objects are symplectic manifolds</text>
+  <text x="660" y="290" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">and whose morphisms are symplectomorphisms, including examples."</text>
+  
+  <!-- Row 3: Quantum Mechanics as a Category -->
+  <rect x="50" y="330" width="1300" height="80" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="350" y1="330" x2="350" y2="410" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="650" y1="330" x2="650" y2="410" stroke="#bdc3c7" stroke-width="1"/>
+  
+  <text x="60" y="355" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">3. Quantum</text>
+  <text x="60" y="375" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Mechanics</text>
+  <text x="60" y="395" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">as a Category</text>
+  
+  <text x="360" y="355" font-family="Arial, sans-serif" font-size="13" fill="#34495e">View Hilbert spaces</text>
+  <text x="360" y="375" font-family="Arial, sans-serif" font-size="13" fill="#34495e">and unitaries in categorical</text>
+  <text x="360" y="395" font-family="Arial, sans-serif" font-size="13" fill="#34495e">terms</text>
+  
+  <text x="660" y="350" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">"Define the category of Hilbert spaces with unitary morphisms.</text>
+  <text x="660" y="370" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">How do quantum channels generalize this?"</text>
+  
+  <!-- Row 4: Building the Quantization Functor -->
+  <rect x="50" y="410" width="1300" height="80" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="350" y1="410" x2="350" y2="490" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="650" y1="410" x2="650" y2="490" stroke="#bdc3c7" stroke-width="1"/>
+  
+  <text x="60" y="435" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">4. Building the</text>
+  <text x="60" y="455" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Quantization</text>
+  <text x="60" y="475" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Functor</text>
+  
+  <text x="360" y="435" font-family="Arial, sans-serif" font-size="13" fill="#34495e">Construct 𝒬:𝐂→𝐐</text>
+  <text x="360" y="455" font-family="Arial, sans-serif" font-size="13" fill="#34495e">on simple systems</text>
+  
+  <text x="660" y="425" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">"Show how to quantize the 1D harmonic oscillator by defining a functor</text>
+  <text x="660" y="445" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">from its phase space to a Hilbert space and symplectic flow to</text>
+  <text x="660" y="465" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">the unitary propagator."</text>
+  
+  <!-- Row 5: Semiclassical & De-Quantization Functor -->
+  <rect x="50" y="490" width="1300" height="80" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="350" y1="490" x2="350" y2="570" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="650" y1="490" x2="650" y2="570" stroke="#bdc3c7" stroke-width="1"/>
+  
+  <text x="60" y="515" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">5. Semiclassical &amp;</text>
+  <text x="60" y="535" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">De-Quantization</text>
+  <text x="60" y="555" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Functor</text>
+  
+  <text x="360" y="515" font-family="Arial, sans-serif" font-size="13" fill="#34495e">Capture ℏ→0 limits</text>
+  <text x="360" y="535" font-family="Arial, sans-serif" font-size="13" fill="#34495e">as a functor</text>
+  
+  <text x="660" y="505" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">"Explain how to construct a functor from quantum systems back to</text>
+  <text x="660" y="525" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">classical phase spaces via WKB approximation, illustrating with coherent</text>
+  <text x="660" y="545" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">states."</text>
+  
+  <!-- Row 6: Adjointness & Natural Transformations -->
+  <rect x="50" y="570" width="1300" height="80" fill="#fff3cd" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="350" y1="570" x2="350" y2="650" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="650" y1="570" x2="650" y2="650" stroke="#bdc3c7" stroke-width="1"/>
+  
+  <text x="60" y="595" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">6. Adjointness &amp;</text>
+  <text x="60" y="615" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Natural</text>
+  <text x="60" y="635" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Transformations</text>
+  
+  <text x="360" y="595" font-family="Arial, sans-serif" font-size="13" fill="#34495e">Verify the adjoint relationship</text>
+  <text x="360" y="615" font-family="Arial, sans-serif" font-size="13" fill="#34495e">and correspondence principle</text>
+  
+  <text x="660" y="585" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">"Demonstrate the unit and counit natural transformations that witness</text>
+  <text x="660" y="605" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">an adjunction between quantization and semiclassical functors."</text>
+  
+  <!-- Row 7: Applications & Extensions -->
+  <rect x="50" y="650" width="1300" height="80" fill="#fff3cd" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="350" y1="650" x2="350" y2="730" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="650" y1="650" x2="650" y2="730" stroke="#bdc3c7" stroke-width="1"/>
+  
+  <text x="60" y="675" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">7. Applications &amp;</text>
+  <text x="60" y="695" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">Extensions</text>
+  
+  <text x="360" y="675" font-family="Arial, sans-serif" font-size="13" fill="#34495e">Explore field theories, gauge</text>
+  <text x="360" y="695" font-family="Arial, sans-serif" font-size="13" fill="#34495e">symmetry, and topological</text>
+  <text x="360" y="715" font-family="Arial, sans-serif" font-size="13" fill="#34495e">functors</text>
+  
+  <text x="660" y="665" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">"Propose how higher-category or 2-functor structures can encode</text>
+  <text x="660" y="685" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">path integrals or gauge symmetry in Functorial Physics."</text>
+  
+  <!-- Row 8: Research Project -->
+  <rect x="50" y="730" width="1300" height="80" fill="#fff3cd" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="350" y1="730" x2="350" y2="810" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="650" y1="730" x2="650" y2="810" stroke="#bdc3c7" stroke-width="1"/>
+  
+  <text x="60" y="755" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">8. Research Project</text>
+  
+  <text x="360" y="755" font-family="Arial, sans-serif" font-size="13" fill="#34495e">Design a small research</text>
+  <text x="360" y="775" font-family="Arial, sans-serif" font-size="13" fill="#34495e">question in functorial</text>
+  <text x="360" y="795" font-family="Arial, sans-serif" font-size="13" fill="#34495e">unification</text>
+  
+  <text x="660" y="745" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">"Using Functorial Physics, outline a project to functorially quantize a</text>
+  <text x="660" y="765" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">simple gauge theory (e.g. U(1) electromagnetism) and compare classical</text>
+  <text x="660" y="785" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">and quantum structures."</text>
+  
+  <!-- Table border -->
+  <rect x="50" y="120" width="1300" height="690" fill="none" stroke="#2c3e50" stroke-width="3"/>
+</svg>
