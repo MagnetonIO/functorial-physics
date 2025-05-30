@@ -1,0 +1,6 @@
+title: Functorial Physics Research
+description: Categorical approach to quantum gravity unification
+theme: minima
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
