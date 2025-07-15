@@ -1,0 +1,31 @@
+cabal-version:      2.4
+name:               functorial-physics
+version:            0.1.0.0
+synopsis:           A categorical framework for unifying quantum mechanics and general relativity
+description:        This library provides a functorial approach to physics, implementing
+                    derived Hamiltonians, topological quantum field theory integration,
+                    and noncommutative geometry tools for modeling quantum-relativistic systems.
+license:            MIT
+license-file:       LICENSE
+author:             Magneton Labs
+maintainer:         info@magnetonlabs.com
+category:           Physics, Mathematics
+build-type:         Simple
+
+library
+  exposed-modules:    Core.Spacetime
+                    , Core.Measurement
+                    , Core.Nonlocality
+                    , Core.Renormalization
+                    , Core.CoherenceSymmetry
+                    , Framework.UnifiedConceptual
+  build-depends:      base ^>=4.16.0.0
+                    , containers
+                    , vector
+                    , mtl
+                    , transformers
+  hs-source-dirs:     .
+  default-language:   Haskell2010
+  ghc-options:        -Wall -Wcompat -Widentities -Wincomplete-uni-patterns
+                      -Wincomplete-record-updates -Wredundant-constraints
+                      -Wmissing-export-lists -Wpartial-fields
