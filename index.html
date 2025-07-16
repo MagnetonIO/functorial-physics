@@ -138,17 +138,89 @@
         }
         
         @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                border-radius: 10px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.5em;
+            }
+            
+            .header p {
+                font-size: 1em;
+            }
+            
+            .header a {
+                display: block !important;
+                margin: 10px auto !important;
+                max-width: 250px;
+            }
+            
             .comparison-table {
-                font-size: 0.8em;
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            
+            .comparison-table thead,
+            .comparison-table tbody,
+            .comparison-table tr {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
             }
             
             .comparison-table th,
             .comparison-table td {
-                padding: 10px 8px;
+                padding: 12px 8px;
+                font-size: 0.85em;
+                word-wrap: break-word;
+                white-space: normal;
             }
             
+            .comparison-table th {
+                font-size: 0.9em;
+            }
+            
+            .category {
+                padding-left: 10px !important;
+            }
+            
+            .summary {
+                padding: 20px 15px;
+            }
+            
+            .summary h2 {
+                font-size: 1.4em;
+            }
+            
+            .summary li {
+                padding: 12px;
+                font-size: 0.9em;
+            }
+        }
+        
+        @media (max-width: 480px) {
             .header h1 {
-                font-size: 2em;
+                font-size: 1.2em;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 8px 4px;
+                font-size: 0.75em;
+            }
+            
+            .comparison-table {
+                font-size: 0.7em;
             }
         }
     </style>
@@ -157,7 +229,7 @@
     <div class="container">
         <div class="header">
             <h1>Functorial Physics vs Other Unification Frameworks</h1>
-            <p>Comprehensive comparison of major approaches to quantum gravity</p>
+            <p>A Categorical Approach to Quantum Gravity Unification</p>
             <div style="margin-top: 20px;">
                 <a href="https://github.com/MagnetonIO/functorial-physics" 
                    style="color: white; text-decoration: none; background: rgba(255,255,255,0.2); 
@@ -193,17 +265,17 @@
             <tbody>
                 <tr>
                     <td class="category">Dimensional Requirements</td>
-                    <td class="disadvantage">10-11 dimensions<br>(6-7 compactified)</td>
-                    <td class="advantage">4 dimensions</td>
-                    <td class="advantage">4 dimensions</td>
-                    <td class="functorial-col advantage">4 dimensions<br>(higher via morphisms)</td>
+                    <td class="disadvantage">10-11 dimensions<br>(Calabi-Yau compactification)</td>
+                    <td class="advantage">4 dimensions<br>(Ashtekar variables)</td>
+                    <td class="advantage">4 dimensions<br>(Lorentzian manifold)</td>
+                    <td class="functorial-col advantage">4D emergent<br>(∞-categorical structure)</td>
                 </tr>
                 <tr>
                     <td class="category">Spacetime Nature</td>
-                    <td class="neutral">Continuous</td>
-                    <td class="disadvantage">Fundamentally discrete</td>
-                    <td class="disadvantage">Fundamentally discrete</td>
-                    <td class="functorial-col advantage">Continuous<br>(discreteness emergent)</td>
+                    <td class="neutral">Smooth manifold<br>(Riemannian)</td>
+                    <td class="disadvantage">Spin networks<br>(discrete quantum geometry)</td>
+                    <td class="disadvantage">Causal partial order<br>(discrete events)</td>
+                    <td class="functorial-col advantage">Topos-theoretic<br>(continuous sheaf)</td>
                 </tr>
                 <tr>
                     <td class="category">Experimental Testability</td>
@@ -220,11 +292,11 @@
                     <td class="functorial-col advantage">Natural via functors</td>
                 </tr>
                 <tr>
-                    <td class="category">Mathematical Complexity</td>
-                    <td class="disadvantage">Extremely complex<br>differential geometry</td>
-                    <td class="disadvantage">Complex spin networks</td>
-                    <td class="neutral">Moderate</td>
-                    <td class="functorial-col advantage">Universal properties<br>simplify calculations</td>
+                    <td class="category">Mathematical Framework</td>
+                    <td class="disadvantage">Supergeometry<br>& K-theory</td>
+                    <td class="disadvantage">SU(2) spin networks<br>& holonomies</td>
+                    <td class="neutral">Poset theory<br>& measure theory</td>
+                    <td class="functorial-col advantage">Higher category theory<br>& topos logic</td>
                 </tr>
                 <tr>
                     <td class="category">Computational Tractability</td>
@@ -234,11 +306,11 @@
                     <td class="functorial-col advantage">Direct programming<br>implementation</td>
                 </tr>
                 <tr>
-                    <td class="category">Unique Predictions</td>
-                    <td class="disadvantage">Landscape problem<br>(10^500 vacua)</td>
-                    <td class="neutral">Discrete spectra</td>
-                    <td class="neutral">Statistical continuum</td>
-                    <td class="functorial-col advantage">Categorical constraints<br>determine vacuum</td>
+                    <td class="category">Vacuum Structure</td>
+                    <td class="disadvantage">Flux landscape<br>(10^500 vacua)</td>
+                    <td class="neutral">Area/volume spectra<br>(discrete eigenvalues)</td>
+                    <td class="neutral">Poisson process<br>(statistical geometry)</td>
+                    <td class="functorial-col advantage">Unique ground state<br>(categorical limits)</td>
                 </tr>
                 <tr>
                     <td class="category">Measurement Problem</td>
@@ -249,10 +321,10 @@
                 </tr>
                 <tr>
                     <td class="category">Renormalization</td>
-                    <td class="neutral">Perturbative</td>
-                    <td class="neutral">Background independent</td>
-                    <td class="neutral">Limited scope</td>
-                    <td class="functorial-col advantage">Systematic via<br>categorical limits</td>
+                    <td class="neutral">Perturbative<br>(worldsheet CFT)</td>
+                    <td class="neutral">Non-perturbative<br>(finite theory)</td>
+                    <td class="neutral">Statistical<br>(cutoff dependent)</td>
+                    <td class="functorial-col advantage">Categorical RG flow<br>(colimit structure)</td>
                 </tr>
                 <tr>
                     <td class="category">Time Problem</td>
@@ -279,6 +351,42 @@
         </table>
         
         <div class="summary">
+            <h2>Theoretical Foundation</h2>
+            <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 25px; border-left: 4px solid #3498db;">
+                <h3 style="color: #2c3e50; margin-top: 0;">What is Functorial Physics?</h3>
+                <p style="color: #555; line-height: 1.6;">
+                    Functorial physics is a novel approach to quantum gravity that uses category theory as its mathematical foundation. 
+                    Unlike other approaches that modify spacetime structure or add dimensions, functorial physics represents physical 
+                    processes as morphisms between categorical objects, with functors describing the relationships between different 
+                    physical theories.
+                </p>
+                <h3 style="color: #2c3e50; margin-top: 20px;">Core Principles</h3>
+                <ul style="color: #555; line-height: 1.6;">
+                    <li><strong>Categorical Structure:</strong> Physical states are objects in categories, processes are morphisms</li>
+                    <li><strong>Functorial Composition:</strong> Physical laws arise from natural transformations between functors</li>
+                    <li><strong>Universal Properties:</strong> Fundamental constraints emerge from categorical limits and colimits</li>
+                    <li><strong>Topos-Theoretic Logic:</strong> Quantum logic naturally emerges from topos structure</li>
+                </ul>
+                <h3 style="color: #2c3e50; margin-top: 20px;">Mathematical Framework</h3>
+                <p style="color: #555; line-height: 1.6;">
+                    The theory builds on <strong>∞-categories</strong> and <strong>higher topos theory</strong>, utilizing:
+                </p>
+                <ul style="color: #555; line-height: 1.6;">
+                    <li><strong>Derived Algebraic Geometry:</strong> Spacetime as a derived stack over the site of observables</li>
+                    <li><strong>Symmetric Monoidal ∞-Categories:</strong> Quantum states as objects with tensor product structure</li>
+                    <li><strong>Higher Gauge Theory:</strong> General covariance via principal ∞-bundles</li>
+                    <li><strong>Cohesive ∞-Topoi:</strong> Unification of discrete and continuous structures</li>
+                    <li><strong>Factorization Algebras:</strong> Local-to-global principles for quantum field theory</li>
+                </ul>
+                <h3 style="color: #2c3e50; margin-top: 20px;">Key Technical Innovations</h3>
+                <ul style="color: #555; line-height: 1.6;">
+                    <li><strong>Homotopy Type Theory (HoTT):</strong> Provides computational interpretation of higher categories</li>
+                    <li><strong>Modal Type Theory:</strong> Encodes locality and causality constraints</li>
+                    <li><strong>Synthetic Differential Geometry:</strong> Smooth structure without coordinate charts</li>
+                    <li><strong>Quantum Cohomology:</strong> Categorical deformation of classical phase spaces</li>
+                </ul>
+            </div>
+            
             <h2>Key Advantages of Functorial Physics</h2>
             <ul>
                 <li><strong>Dimensional Economy:</strong> No extra dimensions needed - higher structure emerges categorically</li>
